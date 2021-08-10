@@ -1,0 +1,1071 @@
+Body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%; }
+
+Header {
+  background-color: #323232;
+  padding: 0px 50px 0px 50px;
+  opacity: 80%; }
+  Header li #menu {
+    color: #d4d1d1;
+    font-family: "Kanit", serif;
+    font-size: 17px; }
+  Header #menu:hover {
+    color: burlywood;
+    transition: 0.7s; }
+
+.grilla {
+  width: 100%;
+  margin: auto;
+  opacity: 0.8;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 5s ease-in-out infinite; }
+
+.boxMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  .boxMain .title {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .boxMain .title h1 {
+      font-family: "Magra", sans-serif;
+      color: #2c2929;
+      position: relative;
+      text-align: center; }
+    .boxMain .title h1:after {
+      content: "";
+      position: absolute;
+      background-color: #2c2929;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -1px;
+      transition: 0.8s ease; }
+    .boxMain .title h1:hover:after {
+      width: 100%; }
+  .boxMain .contacto form {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 40px 20px 0px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); }
+    .boxMain .contacto form input,
+    .boxMain .contacto form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      box-sizing: border-box;
+      font-size: 16px;
+      border: none;
+      border-radius: 7px; }
+    .boxMain .contacto form textarea {
+      min-height: 200px;
+      max-height: 300px; }
+    .boxMain .contacto form #boton {
+      background-color: #323232;
+      padding: 20px;
+      color: white; }
+    .boxMain .contacto form #boton:hover {
+      border: 0.5px solid #4040ad; }
+  .boxMain .gallery {
+    display: flex;
+    padding: 1px;
+    transition: 0.3s;
+    margin-top: 50px; }
+    .boxMain .gallery:hover .boxMain .gallery__image {
+      filter: grayscale(1); }
+    .boxMain .gallery__column {
+      display: flex;
+      flex-direction: column;
+      width: 25%; }
+    .boxMain .gallery__link {
+      margin: 2px;
+      overflow: hidden; }
+      .boxMain .gallery__link:hover .gallery__image {
+        filter: grayscale(0); }
+      .boxMain .gallery__link:hover .gallery__caption {
+        opacity: 1; }
+    .boxMain .gallery__thumb {
+      position: relative; }
+    .boxMain .gallery__image {
+      display: block;
+      width: 100%;
+      transition: 0.3s; }
+      .boxMain .gallery__image:hover {
+        transform: scale(1.1); }
+    .boxMain .gallery__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 25px 15px 15px;
+      width: 100%;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      color: white;
+      opacity: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+      transition: 0.3s; }
+  .boxMain .somos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+    .boxMain .somos img {
+      width: 100%;
+      max-width: 800px;
+      margin: 5px;
+      padding: 100px 50px 0px 50px; }
+    .boxMain .somos p {
+      text-align: justify;
+      max-width: 500px;
+      margin: 100px;
+      font-size: 20px;
+      font-family: "kanit";
+      letter-spacing: 2px;
+      padding: 100px 0px 0px 0px; }
+  .boxMain .container {
+    width: 100%;
+    max-width: 1400px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+  .boxMain .container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 70px;
+    text-align: center;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
+  .boxMain .container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .boxMain .container .card img {
+    width: 330px;
+    height: 220px; }
+  .boxMain .container .card h4 {
+    font-weight: 600;
+    font-family: "Magra";
+    padding: 20px; }
+  .boxMain .container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Magra"; }
+  .boxMain .container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #405feb;
+    font-family: Arial, "Helvetica", sans-serif; }
+  .boxMain .imageMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+    .boxMain .imageMain img {
+      margin: 30px;
+      padding: 30px; }
+    .boxMain .imageMain img:hover {
+      transform: scale(1.1);
+      transition: transform 0.5s; }
+  .boxMain .parrafo {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center; }
+    .boxMain .parrafo p {
+      font-size: 20px;
+      font-family: "Kanit", sans-serif;
+      text-align: center;
+      letter-spacing: 2px; }
+  .boxMain .ingredientes {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    list-style-image: url("https://image.flaticon.com/icons/png/16/1722/1722017.png");
+    margin: 50px;
+    padding: 50px; }
+    .boxMain .ingredientes ul {
+      margin: 40px; }
+    .boxMain .ingredientes p {
+      margin: 50px;
+      font-size: 25px;
+      font-family: "Magra";
+      color: #158d15;
+      border-bottom: solid 1px #158d15;
+      text-shadow: 5px 5px 9px #585656; }
+    .boxMain .ingredientes li {
+      font-size: 20px;
+      font-family: "Courier New", Courier, monospace;
+      color: #201f1f; }
+
+Footer {
+  background-color: #2b2929;
+  width: 100%;
+  margin-top: 100px;
+  padding: 30px 0px; }
+  Footer .containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    align-items: center;
+    margin: auto; }
+    Footer .containerFooter .boxFooter {
+      display: flex;
+      flex-direction: column;
+      padding: 40px; }
+    Footer .containerFooter .logo {
+      display: flex;
+      justify-content: center; }
+      Footer .containerFooter .logo img {
+        width: 180px; }
+  Footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #d4d1d1;
+    font-family: "kanit";
+    text-align: center; }
+  Footer a {
+    text-decoration: none;
+    color: #d4d1d1;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  Footer a:hover {
+    color: white; }
+  Footer .icono,
+  Footer .fas {
+    color: #d4d1d1; }
+  Footer i {
+    padding: 10px; }
+  Footer h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #d4d1d1;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+  Footer .boxCopy {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    color: #d4d1d1; }
+
+@keyframes change {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@media only screen and (max-width: 520px) {
+  Header {
+    background-color: #323232;
+    padding: 10px;
+    opacity: 100%; }
+    Header nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important; }
+      Header nav button {
+        margin-left: 50px;
+        background: #5c5a5a !important; }
+      Header nav img {
+        max-width: 150px; }
+      Header nav li {
+        display: flex;
+        justify-content: center; }
+        Header nav li #menu {
+          color: #d4d1d1;
+          font-family: "Kanit", serif;
+          font-size: 17px; }
+      Header nav #menu:hover {
+        color: burlywood;
+        transition: 0.7s;
+        border-bottom: 1px solid; }
+  .caruselFotos {
+    margin-top: 80px; }
+  .boxMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .boxMain .title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .boxMain .title h1 {
+        font-family: "Magra", sans-serif;
+        color: #2c2929;
+        position: relative;
+        text-align: center; }
+      .boxMain .title h1:after {
+        content: "";
+        position: absolute;
+        background-color: #2c2929;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: 0.8s ease; }
+      .boxMain .title h1:hover:after {
+        width: 100%; }
+    .boxMain .contacto {
+      padding: 10px; }
+      .boxMain .contacto form {
+        width: 100%;
+        max-width: 600px;
+        height: 600px;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 40px 20px 0px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5); }
+        .boxMain .contacto form input,
+        .boxMain .contacto form textarea {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 7px;
+          box-sizing: border-box;
+          font-size: 16px;
+          border: none;
+          border-radius: 7px; }
+        .boxMain .contacto form textarea {
+          min-height: 200px;
+          max-height: 300px; }
+        .boxMain .contacto form #boton {
+          background-color: #323232;
+          padding: 20px;
+          color: white; }
+        .boxMain .contacto form #boton:hover {
+          border: 2px solid #4040ad; }
+    .boxMain .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+      transition: 0.3s;
+      width: 100%; }
+      .boxMain .gallery .gallery__image {
+        width: 100%;
+        height: 100%; }
+      .boxMain .gallery:hover .boxMain .gallery__image {
+        filter: grayscale(1); }
+      .boxMain .gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 400px; }
+      .boxMain .gallery__link {
+        margin: 2px;
+        overflow: hidden; }
+        .boxMain .gallery__link:hover .gallery__image {
+          filter: grayscale(0); }
+        .boxMain .gallery__link:hover .gallery__caption {
+          opacity: 1; }
+      .boxMain .gallery__thumb {
+        position: relative; }
+      .boxMain .gallery__image {
+        display: block;
+        width: 100%;
+        transition: 0.3s; }
+        .boxMain .gallery__image:hover {
+          transform: scale(1.1); }
+      .boxMain .gallery__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: 0.3s; }
+    .boxMain .somos {
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .boxMain .somos img {
+        padding-top: 20px; }
+      .boxMain .somos p {
+        padding-top: 20px;
+        margin: 9px;
+        text-align: center;
+        font-size: 15px;
+        font-family: "kanit"; }
+    .boxMain .container {
+      width: 100%;
+      max-width: 500px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .boxMain .container .card {
+      width: 330px;
+      height: 430px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 70px;
+      text-align: center;
+      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
+    .boxMain .container .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .boxMain .container .card img {
+      width: 330px;
+      height: 220px; }
+    .boxMain .container .card h4 {
+      font-weight: 600;
+      font-family: "Courier New", Courier, monospace; }
+    .boxMain .container .card p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .boxMain .container .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #405feb;
+      font-family: Arial, "Helvetica", sans-serif; }
+    .boxMain .imageMain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .boxMain .imageMain img {
+        width: 300px;
+        margin: 30px;
+        padding: 30px; }
+      .boxMain .imageMain img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s; }
+    .boxMain .parrafo {
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      align-items: center; }
+      .boxMain .parrafo p {
+        font-size: 15px;
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 5px; }
+    .boxMain .ingredientes {
+      display: none; }
+  Footer {
+    background-color: #2b2929;
+    width: 100%;
+    margin-top: 100px;
+    padding: 30px 0px; }
+    Footer .containerFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 1400px;
+      align-items: center;
+      margin: auto; }
+      Footer .containerFooter .boxFooter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+      Footer .containerFooter .logo {
+        display: flex;
+        justify-content: center; }
+        Footer .containerFooter .logo img {
+          width: 180px; }
+    Footer .terms {
+      max-width: 350px;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #d4d1d1;
+      font-family: "kanit";
+      text-align: center; }
+    Footer a {
+      text-decoration: none;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      text-align: center; }
+    Footer a:hover {
+      color: white; }
+    Footer .icono,
+    Footer .fas,
+    Footer .far {
+      color: #d4d1d1; }
+    Footer i {
+      padding: 10px; }
+    Footer h2 {
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 400;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      text-align: center; }
+    Footer .boxCopy {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 0px 40px;
+      color: #d4d1d1; } }
+
+@media only screen and (min-width: 520px) and (max-width: 990px) {
+  Header {
+    background-color: #323232;
+    padding: 0px 50px 0px 50px; }
+    Header nav {
+      width: 100%;
+      height: 100%;
+      display: flex; }
+      Header nav button {
+        background: #5c5a5a !important; }
+      Header nav img {
+        max-width: 150px; }
+      Header nav li {
+        display: flex;
+        justify-content: end; }
+        Header nav li #menu {
+          color: #d4d1d1;
+          font-family: "Kanit", serif;
+          font-size: 17px; }
+      Header nav #menu:hover {
+        color: burlywood;
+        transition: 0.7s;
+        border-bottom: 1px solid; }
+  .boxMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .boxMain .title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .boxMain .title h1 {
+        font-family: "Magra", sans-serif;
+        color: #2c2929;
+        position: relative;
+        text-align: center; }
+      .boxMain .title h1:after {
+        content: "";
+        position: absolute;
+        background-color: #2c2929;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: 0.8s ease; }
+      .boxMain .title h1:hover:after {
+        width: 100%; }
+    .boxMain .contacto {
+      padding: 10px; }
+      .boxMain .contacto form {
+        width: 100%;
+        max-width: 600px;
+        height: 600px;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 40px 20px 0px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5); }
+        .boxMain .contacto form input,
+        .boxMain .contacto form textarea {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 7px;
+          box-sizing: border-box;
+          font-size: 16px;
+          border: none;
+          border-radius: 7px; }
+        .boxMain .contacto form textarea {
+          min-height: 200px;
+          max-height: 300px; }
+        .boxMain .contacto form #boton {
+          background-color: #323232;
+          padding: 20px;
+          color: white; }
+        .boxMain .contacto form #boton:hover {
+          border: 2px solid #4040ad; }
+    .boxMain .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+      transition: 0.3s;
+      width: 100%; }
+      .boxMain .gallery .gallery__image {
+        width: 100%;
+        height: 100%; }
+      .boxMain .gallery:hover .boxMain .gallery__image {
+        filter: grayscale(1); }
+      .boxMain .gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 500px; }
+      .boxMain .gallery__link {
+        margin: 2px;
+        overflow: hidden; }
+        .boxMain .gallery__link:hover .gallery__image {
+          filter: grayscale(0); }
+        .boxMain .gallery__link:hover .gallery__caption {
+          opacity: 1; }
+      .boxMain .gallery__thumb {
+        position: relative; }
+      .boxMain .gallery__image {
+        display: block;
+        width: 100%;
+        transition: 0.3s; }
+        .boxMain .gallery__image:hover {
+          transform: scale(1.1); }
+      .boxMain .gallery__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: 0.3s; }
+    .boxMain .somos {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%; }
+      .boxMain .somos img {
+        width: 100%;
+        padding: 20px 10px 0px 10px;
+        max-width: 500px; }
+      .boxMain .somos p {
+        margin: 0px 10px 20px 0px;
+        text-align: center;
+        font-size: 15px;
+        font-family: "kanit"; }
+    .boxMain .container {
+      width: 100%;
+      max-width: 500px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .boxMain .container .card {
+      width: 330px;
+      height: 430px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 70px;
+      text-align: center;
+      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
+    .boxMain .container .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .boxMain .container .card img {
+      width: 330px;
+      height: 220px; }
+    .boxMain .container .card h4 {
+      font-weight: 600;
+      font-family: "Courier New", Courier, monospace; }
+    .boxMain .container .card p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .boxMain .container .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #405feb;
+      font-family: Arial, "Helvetica", sans-serif; }
+    .boxMain .imageMain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .boxMain .imageMain img {
+        width: 500px;
+        margin: 30px;
+        padding: 30px; }
+      .boxMain .imageMain img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s; }
+    .boxMain .parrafo {
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      align-items: center; }
+      .boxMain .parrafo p {
+        font-size: 15px;
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        letter-spacing: 2px; }
+    .boxMain .ingredientes {
+      display: none; }
+  Footer {
+    background-color: #2b2929;
+    width: 100%;
+    margin-top: 100px;
+    padding: 30px 0px; }
+    Footer .containerFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 1400px;
+      align-items: center;
+      margin: auto; }
+      Footer .containerFooter .boxFooter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+      Footer .containerFooter .logo {
+        display: flex;
+        justify-content: center; }
+        Footer .containerFooter .logo img {
+          width: 180px; }
+    Footer .terms {
+      max-width: 350px;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #d4d1d1;
+      font-family: "kanit";
+      text-align: center; }
+    Footer a {
+      text-decoration: none;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+    Footer a:hover {
+      color: white; }
+    Footer .icono,
+    Footer .fas,
+    Footer .far {
+      color: #d4d1d1; }
+    Footer i {
+      padding: 10px; }
+    Footer h2 {
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 400;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+    Footer .boxCopy {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 0px 40px;
+      color: #d4d1d1; } }
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  Header {
+    background-color: #323232;
+    padding: 0px 50px 0px 50px; }
+    Header li #menu {
+      color: #d4d1d1;
+      font-family: "Kanit", serif;
+      font-size: 17px; }
+    Header #menu:hover {
+      color: burlywood;
+      transition: 0.7s; }
+  .boxMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .boxMain .title {
+      width: 100%;
+      margin-top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .boxMain .title h1 {
+        font-family: "Magra", sans-serif;
+        color: #2c2929;
+        position: relative;
+        text-align: center; }
+      .boxMain .title h1:after {
+        content: "";
+        position: absolute;
+        background-color: #2c2929;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -1px;
+        transition: 0.8s ease; }
+      .boxMain .title h1:hover:after {
+        width: 100%; }
+    .boxMain .contacto form {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+      margin: auto;
+      box-sizing: border-box;
+      padding: 40px 20px 0px 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5); }
+      .boxMain .contacto form input,
+      .boxMain .contacto form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 16px;
+        border: none;
+        border-radius: 7px; }
+      .boxMain .contacto form textarea {
+        min-height: 200px;
+        max-height: 300px; }
+      .boxMain .contacto form #boton {
+        background-color: #323232;
+        padding: 20px;
+        color: white; }
+      .boxMain .contacto form #boton:hover {
+        border: 2px solid #4040ad; }
+    .boxMain .gallery {
+      display: flex;
+      padding: 2px;
+      transition: 0.3s;
+      margin-top: 50px; }
+      .boxMain .gallery:hover .boxMain .gallery__image {
+        filter: grayscale(1); }
+      .boxMain .gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%; }
+      .boxMain .gallery__link {
+        margin: 2px;
+        overflow: hidden; }
+        .boxMain .gallery__link:hover .gallery__image {
+          filter: grayscale(0); }
+        .boxMain .gallery__link:hover .gallery__caption {
+          opacity: 1; }
+      .boxMain .gallery__thumb {
+        position: relative; }
+      .boxMain .gallery__image {
+        display: block;
+        width: 100%;
+        transition: 0.3s; }
+        .boxMain .gallery__image:hover {
+          transform: scale(1.1); }
+      .boxMain .gallery__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: 0.3s; }
+    .boxMain .somos {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .boxMain .somos img {
+        width: 100%;
+        max-width: 500px;
+        margin: 1px;
+        padding: 1px; }
+      .boxMain .somos p {
+        text-align: justify;
+        width: 100%;
+        max-width: 400px;
+        font-size: 16px;
+        font-family: "kanit";
+        letter-spacing: 2px;
+        margin: 30px 1px 1px 1px;
+        padding: 25px 1px 1px 1px; }
+    .boxMain .container {
+      width: 100%;
+      max-width: 1000px;
+      height: 430px;
+      display: flex;
+      justify-content: center;
+      margin: auto; }
+    .boxMain .container .card {
+      width: 1000px;
+      height: 430px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 60px 0px 60px 20px;
+      text-align: center;
+      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); }
+    .boxMain .container .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .boxMain .container .card img {
+      width: 330px;
+      height: 220px; }
+    .boxMain .container .card h4 {
+      font-weight: 600;
+      font-family: "Courier New", Courier, monospace;
+      padding: 20px; }
+    .boxMain .container .card p {
+      padding: 0 1rem;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .boxMain .container .card a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #405feb;
+      font-family: Arial, "Helvetica", sans-serif; }
+    .boxMain .imageMain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .boxMain .imageMain img {
+        margin: 30px;
+        padding: 30px; }
+      .boxMain .imageMain img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s; }
+    .boxMain .parrafo {
+      height: 100%;
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      align-items: center; }
+      .boxMain .parrafo p {
+        font-size: 20px;
+        font-family: "Kanit", sans-serif;
+        text-align: center;
+        letter-spacing: 2px; }
+    .boxMain .ingredientes {
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      list-style-image: url("https://image.flaticon.com/icons/png/16/1722/1722017.png");
+      margin: 50px;
+      padding: 50px; }
+      .boxMain .ingredientes ul {
+        margin: 40px; }
+      .boxMain .ingredientes p {
+        margin: 50px;
+        font-size: 22px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #158d15;
+        border-bottom: solid 1px #158d15;
+        text-shadow: 5px 5px 4px #b8b4b4; }
+      .boxMain .ingredientes li {
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        color: #201f1f; }
+  Footer {
+    background-color: #2b2929;
+    width: 100%;
+    margin-top: 100px;
+    padding: 30px 0px; }
+    Footer .containerFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 1400px;
+      align-items: center;
+      margin: auto; }
+      Footer .containerFooter .boxFooter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+      Footer .containerFooter .logo {
+        display: flex;
+        justify-content: center; }
+        Footer .containerFooter .logo img {
+          width: 180px; }
+    Footer .terms {
+      max-width: 350px;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #d4d1d1;
+      font-family: "kanit";
+      text-align: center; }
+    Footer a {
+      text-decoration: none;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      text-align: center; }
+    Footer a:hover {
+      color: white; }
+    Footer .icono,
+    Footer .fas,
+    Footer .far {
+      color: #d4d1d1; }
+    Footer i {
+      padding: 10px; }
+    Footer h2 {
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 400;
+      color: #d4d1d1;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      text-align: center; }
+    Footer .boxCopy {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 0px 40px;
+      color: #d4d1d1; } }
